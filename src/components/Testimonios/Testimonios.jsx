@@ -27,7 +27,7 @@ function Testimonios() {
 
       <div className="testimonial-card">
         <div className="quote-icon">“</div>
-        <p className="testimonial-text">Los trámites fueron muy rápidos y la atención inmejorable, gracias por el tiempo dedicado.</p>
+        <p className="testimonial-text">Los trámites fueron muy rápidos y la atención inmejorable.</p>
         <div className="client-info">
           <img src={img29} alt="Cliente" className="client-photo" />
           <div>

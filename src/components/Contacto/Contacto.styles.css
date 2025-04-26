@@ -1,43 +1,190 @@
-/* Contact */
+/* Contact Section */
 .contact {
-    background: rgba(37, 99, 235, 0.05);
-    padding: 4rem 2rem;
-    text-align: center;
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.contact__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact__title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.contact__title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #fbbf24;
+}
+
+.contact__subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Social Section */
+.contact__social {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.contact__social-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.contact__social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: white;
+  text-decoration: none;
+}
+
+.contact__social-link:hover {
+  background: rgba(251, 191, 36, 0.2);
+  transform: translateY(-3px);
+}
+
+.contact__social-icon {
+  font-size: 1.5rem;
+}
+
+/* Contact Methods */
+.contact__methods {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.contact__method {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+}
+
+.contact__method-icon {
+  font-size: 1.5rem;
+  color: #fbbf24;
+  margin-top: 3px;
+}
+
+.contact__method-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact__method-link:hover {
+  color: #fbbf24;
+}
+
+.contact__method-text {
+  margin: 0;
+  font-weight: 500;
+}
+
+.contact__method-description {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Contact Form */
+.contact__form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.form__group {
+  margin-bottom: 1.5rem;
+}
+
+.form__group input,
+.form__group textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+}
+
+.form__group input::placeholder,
+.form__group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form__group textarea {
+  resize: vertical;
+}
+
+.form__submit {
+  background: #fbbf24;
+  color: #1a365d;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+.form__submit:hover {
+  background: #f59e0b;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact__grid {
+    grid-template-columns: 1fr;
   }
   
-  .contact h2 {
-    font-size: 2.5rem;
-    color: var(--primary);
-    margin-bottom: 2rem;
-    font-weight: 700;
+  .contact__social-icons {
+    grid-template-columns: 1fr;
   }
   
-  .contact-icons {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    margin-top: 2rem;
-    align-items: center; /* Vertically align items */
+  .contact__title {
+    font-size: 2rem;
   }
-  
-  .contact-icon {
-    font-size: 3rem;
-    color: var(--navy);
-    transition: color 0.3s ease;
-  }
-  
-  .contact-icon:hover {
-    color: var(--red);
-  }
-  
-  .phone-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .phone-number {
-    font-size: 1.5rem;
-    color: var(--navy);
-    text-decoration: none;
-  }
+}
