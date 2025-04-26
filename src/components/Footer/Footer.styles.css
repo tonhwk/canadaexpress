@@ -148,3 +148,20 @@
     margin-top: 1.5rem;
   }
 }
+
+/*------------*/
+@media (max-width: 768px) {
+  /* Make legal links stack vertically */
+  .footer__popup-trigger {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Adjust pop-up positioning for mobile */
+  .footer__popup {
+    left: 0;
+    right: auto;
+    top: 100%;
+    width: 90vw;
+  }
+}
