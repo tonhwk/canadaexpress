@@ -52,21 +52,48 @@
     gap: 1rem;
   }
   
-  .client-photo {
+  
+  
+  .client-info h4 {
+    margin: 0;
+    color: var(--primary);
+  }
+
+
+  /*.client-photo {
     width: 75px;
     height: 75px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid var(--primary);
-  }
+  }*/
+
   
-  .client-info h4 {
+  .client-photo {
+    /* Ensure consistent circle shape */
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1; /* Ensures perfect circle even if width/height differ */
+    border: 3px solid var(--primary);
+    
+    /* Fix for potential image overflow */
+    display: block;
     margin: 0;
-    color: var(--primary);
+    padding: 0;
   }
   
   .client-location {
     font-size: 0.9rem;
     color: #64748b;
     margin-top: 0.2rem;
+  }
+
+  @media (max-width: 768px) {
+    .client-photo {
+      width: 60px;
+      height: 60px;
+    }
   }
