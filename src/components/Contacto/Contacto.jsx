@@ -50,7 +50,7 @@ function Contacto() {
             <div className="contact__method">
               <FontAwesomeIcon icon={faEnvelope} className="contact__method-icon" />
               <div>
-                <a href="mailto:contacto@canadaexpress.com" className="contact__method-link">contacto@canadaexpress.com</a>
+                <a href="mailto:contacto@canadaexpress.com" className="contact__method-link">contacto@canadaexpressmx.com</a>
                 <p className="contact__method-description">Respuesta en 24h</p>
               </div>
             </div>

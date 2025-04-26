@@ -172,7 +172,23 @@
 .form__submit:hover {
   background: #f59e0b;
   transform: translateY(-2px);
+
+
 }
+
+
+
+
+@media (max-width: 600px) {
+  .footer__popup {
+    left: 0;
+    top: 120%;
+    width: 90vw;
+    min-width: 200px;
+    max-width: 95vw;
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
