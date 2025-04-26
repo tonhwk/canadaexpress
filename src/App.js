@@ -1,9 +1,14 @@
 import React from 'react';
 import './App.css';
 
+
+import Navbar from "./components/Navbar"
+import HeroSection from "./components/HeroSection"
+import Destinos from "./components/Destinos"
+
 // Import all images (1-28)
 //import img1 from './img/1.jpg';
-import img2 from './img/2.jpg';
+//import img2 from './img/2.jpg';
 import img3 from './img/3.jpg';
 //import img4 from './img/4.jpg';
 //import img5 from './img/5.jpg';
@@ -11,13 +16,13 @@ import img3 from './img/3.jpg';
 //import img7 from './img/7.jpg';
 //import img8 from './img/8.jpg';
 //import img9 from './img/9.jpg';
-import img10 from './img/10.jpg';
-import img11 from './img/11.jpg';
-import img12 from './img/12.jpg';
+//import img10 from './img/10.jpg';
+//import img11 from './img/11.jpg';
+//import img12 from './img/12.jpg';
 //import img13 from './img/13.jpg';
 //import img14 from './img/14.jpg';
 import img15 from './img/15.jpg';
-import img16 from './img/16.jpg';
+//import img16 from './img/16.jpg';
 //import img17 from './img/17.jpg';
 //import img18 from './img/18.jpg';
 //import img19 from './img/19.jpg';
@@ -29,8 +34,13 @@ import img16 from './img/16.jpg';
 //import img25 from './img/25.jpg';
 //import img26 from './img/26.jpg';
 //import img27 from './img/27.jpg';
-import img28 from './img/28.jpg';
+//import img28 from './img/28.jpg';
 import img29 from './img/29.jpg';
+//import img30 from './img/30.jpg';
+//import img31 from './img/31.jpg';
+import img32 from './img/32.jpg';
+import img33 from './img/33.jpg';
+import img34 from './img/34.jpg';
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -40,61 +50,18 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 function App() {
   return (
     <div className="app">
-      {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo-brand">
-          <img src="/logo.png" alt="Logo Canada Express" className="brand-logo" />
-          <span className="brand-name">Canada Express</span>
-        </div>
-        <div className="nav-links">
-          <a href="#home">Inicio</a>
-          <a href="#destinos">Destinos</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#contacto">Contacto</a>
-        </div>
-      </nav>
-
-      {/* Sección Principal */}
-      <section id="home" className="hero">
-        <div className="hero-content">
-          <h1>Descubre Canadá con Nosotros</h1>
-          <p>Tu aventura comienza aquí. Explora los mejores destinos y experiencias exclusivas en Canadá.</p>
-          <button className="cta-button">Agenda tu cita sin costo</button>
-        </div>
-      </section>
-
-      {/* Destinos */}
-      <section id="destinos" className="destinations">
-        <h2>TURISMO Y TRABAJO EN CANADÁ</h2>
-        <div className="destinations-grid">
-          {/* Toronto */}
-          <div className="destination-card">
-            <img src={img11} alt="Toronto" />
-            <h3>Turismo de verano</h3>
-            <p>- Descubre la CN Tower y el vibrante distrito de entretenimiento.</p>
-            <p>- Descubre la CN Tower y el vibrante distrito de entretenimiento.</p>
-          </div>
-          {/* Vancouver */}
-          <div className="destination-card">
-            <img src={img12} alt="Vancouver" />
-            <h3>Turismo de invierno</h3>
-            <p>Naturaleza y vida urbana en la impresionante costa oeste.</p>
-          </div>
-          {/* Quebec */}
-          <div className="destination-card">
-            <img src={img16} alt="Quebec" />
-            <h3>Trabaja en Canadá</h3>
-            <p>Encanto europeo en el corazón de América del Norte.</p>
-          </div>
-        </div>
-      </section>
+     <Navbar/>
+     <HeroSection/>
+     <Destinos/>
+      
+  
 
       {/* Servicios */}
 <section id="servicios" className="services">
   <h2>NUESTROS PAQUETES</h2>
   <div className="services-container">
     <div className="service-card">
-      <img src={img2} alt="Vuelos a Canadá" className="service-img" />
+      <img src={img32} alt="Vuelos a Canadá" className="service-img" />
       <h3>Paquete Express</h3>
       <ul>
         <li>Trámite de Pasaporte</li>
@@ -104,7 +71,7 @@ function App() {
       </ul>
     </div>
     <div className="service-card">
-      <img src={img10} alt="Visas y Asesoría" className="service-img" />
+      <img src={img33} alt="Visas y Asesoría" className="service-img" />
       <h3>Paquete Plus</h3>
       <ul>
         <li>Trámite de Pasaporte</li>
@@ -116,7 +83,7 @@ function App() {
       </ul>
     </div>
     <div className="service-card">
-      <img src={img28} alt="Tours de Invierno" className="service-img" />
+      <img src={img34} alt="Tours de Invierno" className="service-img" />
       <h3>Paquete Personalizado</h3>
       <p>Arma tu paquete con nosotros, agenda tu cita hoy mismo</p>
     </div>
