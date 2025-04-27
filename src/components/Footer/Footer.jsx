@@ -94,7 +94,7 @@ function Footer() {
              <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
              <FontAwesomeIcon icon={faInstagram} className="footer__icon" />
             </a>
-            <a href="tel:+524441234567" aria-label="Teléfono">
+            <a href="tel:+524442199537" aria-label="Teléfono">
               <FontAwesomeIcon icon={faPhone} className="footer__icon" />
             </a>
           </div>
