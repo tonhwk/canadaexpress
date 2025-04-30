@@ -11,6 +11,7 @@ function Footer() {
    // Estado para mostrar/ocultar pop-ups
    const [showPrivacy, setShowPrivacy] = useState(false);
    const [showTerms, setShowTerms] = useState(false);
+   const [showQuienesSomos, setShowQuienesSomos] = useState(false);
 
   return (
     <footer className="footer">
@@ -33,8 +34,29 @@ function Footer() {
         <div className="footer__section">
           <h4 className="footer__title">Compañía</h4>
           <ul className="footer__list">
-            <li><a href="/about">Quiénes somos</a></li>
-            <li><a href="/careers">Únete a nuestro Equipo</a></li>
+            <li
+              className="footer__popup-trigger"
+              onMouseEnter={() => setShowQuienesSomos(true)}
+              onMouseLeave={() => setShowQuienesSomos(false)}
+              tabIndex={0}
+              onFocus={() => setShowQuienesSomos(true)}
+              onBlur={() => setShowQuienesSomos(false)}
+            >
+              <a href="#privacy" tabIndex={-1}>Quienes Somos</a>
+              {showQuienesSomos && (
+                <div className="footer__popup">
+                  <strong>Quienes Somos</strong>
+                  <p>
+                  Somos una empresa fundada en 2018 en San Luis Potosí, México, dedicada al asesoramiento y gestión de trámites para viajes de turismo, oportunidades laborales, con más de 7 años de experiencia somos la empresa activa con los mejores costos en el mercado brindando siempre un valor agregado para viajar hacia Canadá. Bajo el liderazgo de nuestro Chief Executive Officer, LCNI Alejandro Hernández Martínez, ofrecemos soluciones integrales y personalizadas desde nuestra sede ubicada en la colonia Polanco de San Luis Potosí capital.
+                  </p>
+                </div>
+              )}
+            </li>
+            <li><a 
+              href="https://wa.me/524442199537?text=Buenas%20tardes,%20quisiera%20informacion%20acerca%20de%20las%20vacantes%20disponibles"
+              target="_blank"
+              rel="noopener noreferrer">
+              Únete a nuestro Equipo</a></li>
           </ul>
         </div>
 

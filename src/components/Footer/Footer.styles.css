@@ -124,7 +124,7 @@
 
 @media (max-width: 600px) {
   .footer__popup {
-    left: 0;
+    left: 0; 
     top: 120%;
     width: 90vw;
     min-width: 200px;
